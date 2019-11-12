@@ -3,7 +3,7 @@
  * Plugin name: Advanced S3 Destinations for BackWPup
  * Plugin URI:  https://git.feneas.org/noplanman/advanced-backwpup-s3-destinations
  * Description: Easily add custom S3 destinations for <a href="https://backwpup.com">BackWPup</a>.
- * Version:     1.0.0
+ * Version:     1.1.0
  * Author:      Armando Lüscher
  * Author URI:  https://noplanman.ch
  * Text Domain: advanced-backwpup-s3-destinations
@@ -29,7 +29,7 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-namespace NPM\BackWPupS3Destinations;
+namespace NPM\AdvancedBackWPupS3Destinations;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -44,17 +44,23 @@ add_action( 'admin_init', function () {
 	) {
 		deactivate_plugins( plugin_basename( __FILE__ ) );
 
-		add_action( 'admin_notices', function () {
-			?>
-			<div class="notice notice-error is-dismissible">
-				<p><strong><?php _e( 'BackWPup or BackWPup Pro must be installed and activated!', 'advanced-backwpup-s3-destinations' ); ?></strong></p>
-				<p><em><?php _e( 'Advanced S3 Destinations for BackWPup has been deactivated.', 'advanced-backwpup-s3-destinations' ); ?></em></p>
-			</div>
-			<?php
-			unset( $_GET['activate'] );
-		} );
+		add_action( 'admin_notices', 'NPM\AdvancedBackWPupS3Destinations\admin_notice_missing_plugin' );
+		add_action( 'network_admin_notices', 'NPM\AdvancedBackWPupS3Destinations\admin_notice_missing_plugin' );
 	}
 } );
+
+/**
+ * Admin notice to alert about missing BackWPup plugin.
+ */
+function admin_notice_missing_plugin() {
+	?>
+	<div class="notice notice-error is-dismissible">
+		<p><strong><?php _e( 'BackWPup or BackWPup Pro must be installed and activated!', 'advanced-backwpup-s3-destinations' ); ?></strong></p>
+		<p><em><?php _e( 'Advanced S3 Destinations for BackWPup has been deactivated.', 'advanced-backwpup-s3-destinations' ); ?></em></p>
+	</div>
+	<?php
+	unset( $_GET['activate'] );
+}
 
 /**
  * Fetch the saved S3 destinations.

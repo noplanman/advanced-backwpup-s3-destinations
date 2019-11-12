@@ -3,10 +3,10 @@
 Contributors: noplanman
 Donate link: https://noplanman.ch/donate
 Tags: backwpup, s3, storage, destination, backup
-Requires at least: 3.9
-Tested up to: 5.2.2
+Requires at least: 4.6
+Tested up to: 5.3
 Requires PHP: 5.3.3
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 Author URI: https://noplanman.ch
 Plugin URI: https://git.feneas.org/noplanman/advanced-backwpup-s3-destinations
 License: GPLv2 or later
@@ -25,7 +25,7 @@ There you can add additional S3 destinations which can then be used in your jobs
 
 = Requirements =
 
-* WordPress 3.9 and PHP 5.3.3 required!
+* WordPress 4.6 and PHP 5.3.3 required!
 
 = Development =
 
@@ -72,9 +72,15 @@ For a manual installation:
 
 == Changelog ==
 
-= Version 1.0.0 =
+= Version 1.1.0 =
+Release Date: 2019-11-12
 
-Release Date: July 28, 2019
+* Fixed admin notices for network installations
+* Minimum WP is now 4.6
+* Tested up to WP 5.3
+
+= Version 1.0.0 =
+Release Date: 2019-08-04
 
 * Add new "S3 Destinations" tab to "BackWPup -> Settings" page
 * Initial version
