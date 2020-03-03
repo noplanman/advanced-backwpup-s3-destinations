@@ -3,7 +3,7 @@
  * Plugin name: Advanced S3 Destinations for BackWPup
  * Plugin URI:  https://git.feneas.org/noplanman/advanced-backwpup-s3-destinations
  * Description: Easily add custom S3 destinations for <a href="https://backwpup.com">BackWPup</a>.
- * Version:     1.1.0
+ * Version:     1.1.1
  * Author:      Armando Lüscher
  * Author URI:  https://noplanman.ch
  * Text Domain: advanced-backwpup-s3-destinations
@@ -114,7 +114,7 @@ add_action( 'backwpup_page_settings_tab_content', function () {
 		<h3 class="title"><?php _e( 'Custom S3 destinations', 'advanced-backwpup-s3-destinations' ); ?></h3>
 
 		<label for="s3_destinations_append">
-			<input name="s3_destinations_append" type="checkbox" id="s3_destinations_append" value="1" <?php checked( get_site_option( 'backwpup_s3_destinations_append', true ) ); ?> />
+			<input name="s3_destinations_append" type="checkbox" id="s3_destinations_append" value="1" <?php checked( get_site_option( 'advanced_backwpup_s3_destinations_append', true ) ); ?> />
 			<?php esc_html_e( 'Append to the default S3 destinations list', 'advanced-backwpup-s3-destinations' ); ?>
 		</label>
 
