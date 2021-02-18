@@ -3,7 +3,7 @@
  * Plugin name: Advanced S3 Destinations for BackWPup
  * Plugin URI:  https://git.feneas.org/noplanman/advanced-backwpup-s3-destinations
  * Description: Easily add custom S3 destinations for <a href="https://backwpup.com">BackWPup</a>.
- * Version:     1.1.1
+ * Version:     1.1.2
  * Author:      Armando Lüscher
  * Author URI:  https://noplanman.ch
  * Text Domain: advanced-backwpup-s3-destinations
