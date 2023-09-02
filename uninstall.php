@@ -4,7 +4,7 @@
 defined( 'WP_UNINSTALL_PLUGIN' ) || exit;
 
 if ( ! current_user_can( 'activate_plugins' ) ) {
-	return;
+    return;
 }
 
 check_admin_referer( 'bulk-plugins' );

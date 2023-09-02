@@ -3,12 +3,12 @@
 Contributors: noplanman
 Donate link: https://noplanman.ch/donate
 Tags: backwpup, s3, storage, destination, backup
-Requires at least: 4.6
-Tested up to: 5.6.1
-Requires PHP: 5.3.3
-Stable tag: 1.1.2
+Requires at least: 6.0
+Tested up to: 6.3.1
+Requires PHP: 8.0
+Stable tag: 2.0.0
 Author URI: https://noplanman.ch
-Plugin URI: https://git.feneas.org/noplanman/advanced-backwpup-s3-destinations
+Plugin URI: https://gitlab.com/noplanman/advanced-backwpup-s3-destinations
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,13 +25,13 @@ There you can add additional S3 destinations which can then be used in your jobs
 
 = Requirements =
 
-* WordPress 4.6 and PHP 5.3.3 required!
+* WordPress 6.0 and PHP 8.0 required!
 
 = Development =
 
 This plugin is completely open source and a work of passion.
-If you would like to be part of it and join in, make your way over to the [project page](https://git.feneas.org/noplanman/advanced-backwpup-s3-destinations) now.
-Also, if you have an idea you would like to see in this plugin or if you've found a bug, please [let me know](https://git.feneas.org/noplanman/advanced-backwpup-s3-destinations/issues/new).
+If you would like to be part of it and join in, make your way over to the [project page](https://gitlab.com/noplanman/advanced-backwpup-s3-destinations) now.
+Also, if you have an idea you would like to see in this plugin or if you've found a bug, please [let me know](https://gitlab.com/noplanman/advanced-backwpup-s3-destinations/issues/new).
 
 = Donate / Support =
 
@@ -71,6 +71,12 @@ For a manual installation:
 2. Activate the plugin on the 'Plugins' page in your WordPress Admin.
 
 == Changelog ==
+
+= Version 2.0.0 =
+Release Date: 2023-09-02
+
+* Minimum WP 6.0 and PHP 8.0
+* Tested up to WP 6.3.1
 
 = Version 1.1.2 =
 Release Date: 2021-02-18
